@@ -1,0 +1,13 @@
+.header {
+  height: 3em;
+}
+.nav-bar {
+  float: right;
+}
+.appointment-time {
+  display: inline-block;
+}
+.previous {
+  position: absolute;
+  right: 38px;
+}

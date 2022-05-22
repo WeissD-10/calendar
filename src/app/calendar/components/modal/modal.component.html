@@ -1,0 +1,23 @@
+<div>
+  <div class="header">
+    <div class="appointment-time"><span>{{currentAppointment.date | date : 'cccc, dd hh:mm yyyy'}}</span></div>
+    <div class="nav-bar">
+      <ng-container *ngIf="currentIndex > 0">
+        <button class="previous btn btn-primary" type="button" (click)="nextAppointment(modalEnum.previous)">{{'<'}}</button>
+      </ng-container>
+      <ng-container *ngIf="currentIndex < appMaxInd">
+        <button class="next btn btn-primary" (click)="nextAppointment(modalEnum.next)">{{'>'}}</button>
+      </ng-container>
+    </div>
+  </div>
+  <div class="appointment-info container">
+    <div class="row">
+      <div class="property-name col-md-4">
+        <span>{{currentAppointment.property.name}}</span>
+      </div>
+      <div class="landlord name col-md-4">
+        <span>{{currentAppointment.property.user.profile.firstname + ' ' + currentAppointment.property.user.profile.name}}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-//created with https://app.quicktype.io/
+//created with https://app.quicktype.io/ with minor manual changes
 export interface IAppointment {
   id:                     string;
   date:                   string;

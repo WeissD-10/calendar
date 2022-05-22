@@ -2,19 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CalendarComponent } from './components/calendar/calendar.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import { AppCalendarModule } from './calendar/components/calendar.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalendarComponent,
-    ModalComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppCalendarModule,
+    HttpClientModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

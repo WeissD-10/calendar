@@ -1,0 +1,6 @@
+
+<div class="container">
+  <ngb-datepicker class="inline" #dp (navigate)="date = $event.next" [(ngModel)]="model" (dateSelect)="dateSelected($event)"></ngb-datepicker>
+  <app-calendar class="inline" [dateInput]="$dateOutput"></app-calendar>
+</div>
+
