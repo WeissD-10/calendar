@@ -30,7 +30,7 @@ import { ModalComponent } from '../modal/modal.component';
 export class CalendarWeekComponent implements OnInit, OnDestroy {
 
   @Input()
-  dateInput!: EventEmitter<NgbDate>
+  dateInput = new EventEmitter<NgbDate>();
 
   /**
    * sets increment by which the arrows change the date

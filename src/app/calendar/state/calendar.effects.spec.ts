@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { provideMockActions } from '@ngrx/effects/testing';
 import { Observable } from 'rxjs';
+import { IAppointmentService } from 'src/app/interfaces/services/appointment';
 
 import { CalendarEffects } from './calendar.effects';
 
@@ -12,6 +13,7 @@ describe('CalendarEffects', () => {
     TestBed.configureTestingModule({
       providers: [
         CalendarEffects,
+        IAppointmentService,
         provideMockActions(() => actions$)
       ]
     });

@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="currentAppointment">
   <div class="header">
     <div class="appointment-time"><span>{{currentAppointment.date | date : 'cccc, dd hh:mm yyyy'}}</span></div>
     <div class="nav-bar">

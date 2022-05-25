@@ -1,0 +1,262 @@
+import { IAddress, IAppointment } from "src/app/interfaces/appointments";
+
+export const  appointmentsMock: IAppointment[] = [
+    {
+      id: "2442449",
+      date: "2022-05-09T11:00:00.000+0000",
+      maxInviteeCount: 3,
+      attendeeCount: 2,
+      showContactInformation: false,
+      contact: {
+        firstname: "Max",
+        name: "",
+        email: "",
+        mobile: "",
+        phone: "",
+        address: {} as IAddress,
+        fullName: ""
+      },
+      property: {
+        id: "2442379",
+        name: "2 Zimmer in Stendal",
+        inviteeCount: 2,
+        address: {
+          street: "Karlhagenbeckstr",
+          houseNumber: "31",
+          city: "Stendal",
+          country: "DE",
+          zipCode: "39576",
+          __typename: "Address"
+        },
+        attachments: [],
+        user: {
+          profile: {
+            firstname: "Max",
+            name: "Mustermann",
+            phone: "",
+            gender: "NA",
+            title: "NONE"
+          },
+          usertype: "COMPANYADMIN",
+          __typename: "LandlordUser"
+        },
+        __typename: "Property"
+      },
+      __typename: "Appointment"
+    },
+    {
+      id: "2442150",
+      date: "2022-05-09T11:00:00.000+0000",
+      maxInviteeCount: 2,
+      attendeeCount: 1,
+      showContactInformation: false,
+      contact: {
+        firstname: "Max",
+        name: "",
+        email: "",
+        mobile: "",
+        phone: "",
+        address: {} as IAddress,
+        fullName: ""
+      },
+      property: {
+        id: "2440848",
+        name: "Test",
+        inviteeCount: 1,
+        address: {
+          street: "Lazarettstr.",
+          houseNumber: "3",
+          city: "München",
+          country: "DE",
+          zipCode: "80636",
+          __typename: "Address"
+        },
+        attachments: [],
+        user: {
+          profile: {
+            firstname: "Max",
+            name: "Mustermann",
+            phone: "",
+            gender: "NA",
+            title: "NONE"
+          },
+          usertype: "COMPANYADMIN",
+          __typename: "LandlordUser"
+        },
+        __typename: "Property"
+      },
+      __typename: "Appointment"
+    },
+    {
+      id: "2442901",
+      date: "2022-05-09T11:00:00.000+0000",
+      maxInviteeCount: 3,
+      attendeeCount: 1,
+      showContactInformation: false,
+      contact: {
+        firstname: "Max",
+        name: "",
+        email: "",
+        mobile: "",
+        phone: "",
+        address: {} as IAddress,
+        fullName: ""
+      },
+      property: {
+        id: "2440850",
+        name: "Flat ohne name",
+        inviteeCount: 1,
+        address: {
+          street: "Lazarettstr.",
+          houseNumber: "3",
+          city: "München",
+          country: "DE",
+          zipCode: "80636",
+          __typename: "Address"
+        },
+        attachments: [],
+        user: {
+          profile: {
+            firstname: "Max",
+            name: "Mustermann",
+            phone: "",
+            gender: "NA",
+            title: "NONE"
+          },
+          usertype: "COMPANYADMIN",
+          __typename: "LandlordUser"
+        },
+        __typename: "Property"
+      },
+      __typename: "Appointment"
+    },
+    {
+      id: "2442450",
+      date: "2022-05-09T12:00:00.000+0000",
+      maxInviteeCount: 3,
+      attendeeCount: 2,
+      showContactInformation: false,
+      contact: {
+        firstname: "Max",
+        name: "",
+        email: "",
+        mobile: "",
+        phone: "",
+        address: {} as IAddress,
+        fullName: ""
+      },
+      property: {
+        id: "2442379",
+        name: "Something something",
+        inviteeCount: 2,
+        address: {
+          street: "Karlhagenbeckstr",
+          houseNumber: "31",
+          city: "Stendal",
+          country: "DE",
+          zipCode: "39576",
+          __typename: "Address"
+        },
+        attachments: [],
+        user: {
+          profile: {
+            firstname: "Max",
+            name: "Mustermann",
+            phone: "",
+            gender: "NA",
+            title: "NONE"
+          },
+          usertype: "COMPANYADMIN",
+          __typename: "LandlordUser"
+        },
+        __typename: "Property"
+      },
+      __typename: "Appointment"
+    },
+    {
+      id: "2442461",
+      date: "2022-05-25T15:00:00.000+0000",
+      maxInviteeCount: 3,
+      attendeeCount: 2,
+      showContactInformation: false,
+      contact: {
+        firstname: "Max",
+        name: "",
+        email: "",
+        mobile: "",
+        phone: "",
+        address: {} as IAddress,
+        fullName: ""
+      },
+      property: {
+        id: "2442379",
+        name: "2 Zimmer in Stendal",
+        inviteeCount: 2,
+        address: {
+          street: "Karlhagenbeckstr",
+          houseNumber: "31",
+          city: "Stendal",
+          country: "DE",
+          zipCode: "39576",
+          __typename: "Address"
+        },
+        attachments: [],
+        user: {
+          profile: {
+            firstname: "Max",
+            name: "Mustermann",
+            phone: "",
+            gender: "NA",
+            title: "NONE"
+          },
+          usertype: "COMPANYADMIN",
+          __typename: "LandlordUser"
+        },
+        __typename: "Property"
+      },
+      __typename: "Appointment"
+    },
+    {
+      id: "2442460",
+      date: "2022-05-09T15:00:00.000+0000",
+      maxInviteeCount: 3,
+      attendeeCount: 2,
+      showContactInformation: false,
+      contact: {
+        firstname: "Max",
+        name: "",
+        email: "",
+        mobile: "",
+        phone: "",
+        address: {} as IAddress,
+        fullName: ""
+      },
+      property: {
+        id: "2442379",
+        name: "2 Zimmer in Stendal",
+        inviteeCount: 2,
+        address: {
+          street: "Karlhagenbeckstr",
+          houseNumber: "31",
+          city: "Stendal",
+          country: "DE",
+          zipCode: "39576",
+          __typename: "Address"
+        },
+        attachments: [],
+        user: {
+          profile: {
+            firstname: "Max",
+            name: "Mustermann",
+            phone: "",
+            gender: "NA",
+            title: "NONE"
+          },
+          usertype: "COMPANYADMIN",
+          __typename: "LandlordUser"
+        },
+        __typename: "Property"
+      },
+      __typename: "Appointment"
+    }
+  ]

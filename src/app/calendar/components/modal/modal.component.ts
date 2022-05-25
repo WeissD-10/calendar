@@ -17,7 +17,7 @@ export class ModalComponent implements OnInit {
 
 
   @Input()
-  appointments!: IAppointment[];
+  appointments = new Array<IAppointment>();
   @Input()
   currentAppointment!: IAppointment;
 
@@ -36,12 +36,10 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
     this.currentIndex = this.appointments.indexOf(this.currentAppointment);
     this.appMaxInd = this.appointments.length - 1;
-    console.warn(this.currentIndex, 'init');
   }
 
   nextAppointment(action: number) {
     if(action === appointmentModalEnum.next) {
-      console.warn(this.currentIndex, 'current');
       this.changeCurrentAppointment(this.currentIndex + 1);
     } else {
       this.changeCurrentAppointment(this.currentIndex - 1);
@@ -49,8 +47,6 @@ export class ModalComponent implements OnInit {
   }
 
   changeCurrentAppointment(index: number) {
-    console.log(index);
-    console.warn(this.appointments[index]);
     this.currentIndex = index;
     this.currentAppointment = this.appointments[index];
   }

@@ -1,13 +1,19 @@
-import { reducer, initialState } from './calendar.reducer';
+import { appointmentsMock } from '../components/mock/appointments.mock';
+import { calendarReducer, initialState } from './calendar.reducer';
 
 describe('Calendar Reducer', () => {
-  describe('an unknown action', () => {
-    it('should return the previous state', () => {
-      const action = {} as any;
+  it('an unknown action should return the previous state', () => {
+    const action = {} as any;
 
-      const result = reducer(initialState, action);
+    const result = calendarReducer(initialState, action);
 
-      expect(result).toBe(initialState);
-    });
+    expect(result).toBe(initialState);
+  });
+  it('should set appointsments from success into state', () => {
+    const action = {
+      type: '[Calendar] Load Appointments Success', data: appointmentsMock
+    };
+    const result = calendarReducer(initialState, action);
+    expect(result).toEqual({...initialState, appointments: appointmentsMock})
   });
 });
