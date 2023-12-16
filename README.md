@@ -1,3 +1,7 @@
+Small worksample Calendar App. 3 - 3,5h worktime
+
+Should use premade visual components, should have a datepicker, use predetermined datastructure.
+
 # Calendar
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
